@@ -7,7 +7,7 @@ const WeatherApp = () => {
   const { latitude, longitude } = usePosition();
 
   const getWeatherData = async (lat, lon) => {
-    const key = "b8db84416907f4abdbfd9c0dd6d64b1f";
+    const key = "YOUR_API_KEY";
     const lang = navigator.language.split("-")[0];
     try {
       const { data } = await axios.get(
